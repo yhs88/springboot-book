@@ -1,6 +1,28 @@
-devtools:
-  livereload:
-    enabled: true
 
-datasource:
-  url: jdbc:h2:mem:testdb
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+  h2:
+    console:
+      enabled: true
+      path: /console
+  devtools:
+    livereload:
+      enabled: true
+  thymeleaf:
+    cache: false
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 105088266385-4ro8vaq6jnej1b48bq5nturkcshek7t1.apps.googleusercontent.com
+            client-secret: Cha401NJRkpJHzj6lUxxyehV
+          facebook:
+            client-id: 227152371560648
+            client-secret: c72f2f254ed07a47ba583097fec60d66
+custom:
+  oauth2:
+    kakao:
+      client-id: 278ee9f9f5ece0718afe98d11aa399fc
